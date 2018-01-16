@@ -25,6 +25,9 @@ defmodule MaxwellCompress.Mixfile do
   end
 
   defp deps do
-    [ {:maxwell, "~> 2.2"} ]
+    [
+      {:poison, "~> 2.1 or ~> 3.0", only: :test},
+      {:maxwell, "~> 2.2"}
+    ]
   end
 end

@@ -43,5 +43,4 @@ defmodule Maxwell.Middleware.Compress do
       e in ErlangError -> {:error, e}
     end
   end
-
 end

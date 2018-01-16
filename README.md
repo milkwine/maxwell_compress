@@ -1,4 +1,5 @@
 # MaxwellCompress
+[![Build Status](https://travis-ci.org/sawater/maxwell_compress.svg?branch=master)][https://travis-ci.org/sawater/maxwell_compress]
 
 Maxwell middleware to do `HTTP compression`. Now support `gzip` method.
 

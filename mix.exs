@@ -4,9 +4,14 @@ defmodule MaxwellCompress.Mixfile do
   def project do
     [
       app: :maxwell_compress,
-      version: "0.0.1",
+      version: "0.1.0",
       elixir: "~> 1.4",
       start_permanent: Mix.env == :prod,
+      package: %{
+        licenses: ["MIT"],
+        maintainers: ["milkwine"],
+        links: %{"GitHub" => "https://github.com/milkwine/maxwell_compress"}
+      },
       deps: deps(),
       description: description(),
     ]
@@ -26,8 +31,9 @@ defmodule MaxwellCompress.Mixfile do
 
   defp deps do
     [
+      {:maxwell, ">= 2.2.0"},
       {:poison, "~> 2.1 or ~> 3.0", only: :test},
-      {:maxwell, "~> 2.2"}
+      {:ex_doc, ">= 0.0.0", only: [:dev]},
     ]
   end
 end
